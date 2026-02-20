@@ -46,7 +46,7 @@ const skillCategories = [
   },
   {
     title: "Libraries",
-    skills: ["Mongoose", "React-Router-Dom", "React Hook Form", "Bootstrap"],
+    skills: ["Mongoose", "React-Router-Dom", "React Hook Form", "Bootstrap", "Framer Motion"],
   },
   {
     title: "Coursework",
