@@ -10,15 +10,15 @@ export default function Contact() {
   const contactPhone = "+91 79844 06542";
   const contactLocation = "Jamnagar, Gujarat, India";
   const githubUrl =
-    process.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com/Shivam-Ramoliya/";
+    process.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com/Shivam-S-Ramoliya";
   const linkedinUrl =
     process.env.NEXT_PUBLIC_LINKEDIN_URL ||
-    "https://www.linkedin.com/in/ramoliya-shivam-sureshbhai-753265287/";
+    "https://www.linkedin.com/in/shivam-s-ramoliya-753265287/";
   const twitterUrl =
-    process.env.NEXT_PUBLIC_TWITTER_URL || "https://x.com/_s_s_ramolia_07/";
-  const instagramUrl = "https://www.instagram.com/ss_ramoliya07/";
+    process.env.NEXT_PUBLIC_TWITTER_URL || "https://x.com/shivam_ramoliya";
+  const instagramUrl = "https://www.instagram.com/shivam_s_ramoliya";
   const codeforcesUrl = "https://codeforces.com/profile/ShivamRS0712";
-  const leetcodeUrl = "https://leetcode.com/u/ShivamRS0712/";
+  const leetcodeUrl = "https://leetcode.com/u/Shivam-S-Ramoliya/";
   const [formState, setFormState] = useState({
     name: "",
     email: "",
