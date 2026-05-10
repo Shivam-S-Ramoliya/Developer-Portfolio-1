@@ -4,21 +4,28 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { sendContactEmail } from "@/services/emailService";
 
+const RESUME_URL = "https://drive.google.com/file/d/1_2c_HJ7k4aNFPp8hrOjVWIIBci8KqaEY/view?usp=drive_link";
+const CONTACT_EMAIL = "shivamramoliya2005@gmail.com";
+const CONTACT_PHONE = "+91 79844 06542";
+const CONTACT_LOCATION = "Jamnagar, Gujarat, India";
+const GITHUB_URL = "https://github.com/Shivam-S-Ramoliya";
+const LINKEDIN_URL = "https://www.linkedin.com/in/shivam-s-ramoliya-753265287/";
+const TWITTER_URL = "https://x.com/shivam_ramoliya";
+const INSTAGRAM_URL = "https://www.instagram.com/shivam_s_ramoliya";
+const CODEFORCES_URL = "https://codeforces.com/profile/ShivamRS0712";
+const LEETCODE_URL = "https://leetcode.com/u/Shivam-S-Ramoliya/";
+
+
 export default function Contact() {
-  const contactEmail =
-    process.env.NEXT_PUBLIC_CONTACT_EMAIL || "shivamramoliya2005@gmail.com";
-  const contactPhone = "+91 79844 06542";
-  const contactLocation = "Jamnagar, Gujarat, India";
-  const githubUrl =
-    process.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com/Shivam-S-Ramoliya";
-  const linkedinUrl =
-    process.env.NEXT_PUBLIC_LINKEDIN_URL ||
-    "https://www.linkedin.com/in/shivam-s-ramoliya-753265287/";
-  const twitterUrl =
-    process.env.NEXT_PUBLIC_TWITTER_URL || "https://x.com/shivam_ramoliya";
-  const instagramUrl = "https://www.instagram.com/shivam_s_ramoliya";
-  const codeforcesUrl = "https://codeforces.com/profile/ShivamRS0712";
-  const leetcodeUrl = "https://leetcode.com/u/Shivam-S-Ramoliya/";
+  const contactEmail = CONTACT_EMAIL;
+  const contactPhone = CONTACT_PHONE;
+  const contactLocation = CONTACT_LOCATION;
+  const githubUrl = GITHUB_URL;
+  const linkedinUrl = LINKEDIN_URL;
+  const twitterUrl = TWITTER_URL;
+  const instagramUrl = INSTAGRAM_URL;
+  const codeforcesUrl = CODEFORCES_URL;
+  const leetcodeUrl = LEETCODE_URL;
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -175,7 +182,7 @@ export default function Contact() {
             </motion.div>
 
             <motion.a
-              href="/Shivam_S_Ramoliya.pdf"
+              href={RESUME_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-white text-black rounded-full font-bold hover:bg-gray-200 transition-colors transform hover:-translate-y-1"

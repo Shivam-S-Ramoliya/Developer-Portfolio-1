@@ -10,6 +10,8 @@ import {
 import { useRef } from "react";
 import Link from "next/link";
 
+const RESUME_URL = "https://drive.google.com/file/d/1_2c_HJ7k4aNFPp8hrOjVWIIBci8KqaEY/view?usp=drive_link";
+
 // Icons (Using simple SVGs or lucid-react if available, but I'll use SVG here for zero-deps)
 const Icons = {
   Home: (props: any) => (
@@ -138,7 +140,7 @@ const DOCK_ITEMS = [
     id: "resume",
     icon: Icons.FileText,
     label: "Resume",
-    href: "/Shivam_S_Ramoliya.pdf",
+    href: RESUME_URL,
     external: true,
   },
 ];
