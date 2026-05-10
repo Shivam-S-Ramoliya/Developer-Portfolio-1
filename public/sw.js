@@ -1,5 +1,5 @@
-const CACHE_NAME = "shivam-portfolio-v1";
-const ASSETS_TO_CACHE = ["/", "/Shivam-1.png", "/Shivam-1.jpg"];
+const CACHE_NAME = "shivam-portfolio-v2";
+const ASSETS_TO_CACHE = ["/Shivam-1.png", "/Shivam-1.jpg"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -22,6 +22,15 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
+  if (event.request.method !== "GET") return;
+
+  if (event.request.mode === "navigate") {
+    event.respondWith(
+      fetch(event.request).catch(() => caches.match(event.request)),
+    );
+    return;
+  }
+
   event.respondWith(
     caches
       .match(event.request)
